@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 let showerText = document.getElementById("showerText");
 const originDate = new Date(2024, 0, 1);
 const nowDate = new Date();
-if((getDaysTo(originDate, nowDate))%2 == 0){
+if((getDaysTo(originDate, nowDate))%2+1 == 0){
     showerText.textContent = "Shower Today";
 }else{
     showerText.textContent = "No Shower Today";
